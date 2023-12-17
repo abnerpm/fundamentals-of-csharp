@@ -1,4 +1,6 @@
-# Delegates
+# Fundamentals of CSharp
+
+## Delegates
 
 A delegate is an object that knows how to call a method, is similar function pointer in C. See this example from [function-pointer-in-c]( https://www.geeksforgeeks.org/function-pointer-in-c):
 
@@ -89,7 +91,7 @@ c += Multiply;
 c(15, 10);
 ```
 
-# Events
+## Events
 
 When use delegates a pattern emerge: broadcaster and subscriber. The event is to prevent subscribers from interfering with one another.
 
@@ -142,7 +144,8 @@ public static class Run
 // the old price was 0, the new is 5
 // the old price was 5, the new is 10
 ```
-# Func and Action delegates
+
+## Func and Action delegates
 
 The *func* delegate points to a method that accepts parameters and returns a value. The action is the same thing but not return a value.
 
