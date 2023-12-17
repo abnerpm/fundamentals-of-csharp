@@ -1,6 +1,5 @@
 namespace c_10_in_a_nutshell.Delegates;
 
-
 public static class Calculator
 {
     private delegate void Calc(int a, int b);
