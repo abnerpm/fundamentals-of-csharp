@@ -204,3 +204,18 @@ public static void ActionExample()
     }
 }
 ```
+
+## Predicate delegate
+
+Predicate represent the method that determines criterious to apply to data.
+
+```csharp
+var data = new List<int> { 1, -2, 3, 0, 2, -1 };
+
+Predicate<int> isPositive = delegate(int val) { return val > 0; };
+var filtered = data.FindAll(isPositive);
+
+Console.WriteLine(string.Join(",", filtered));
+```
+
+
